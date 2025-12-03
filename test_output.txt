@@ -1,0 +1,389 @@
+[  +17 ms] executing: uname -m
+[   +4 ms] Exit code 0 from: uname -m
+[        ] x86_64
+[   +6 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[  +14 ms] Found 1 files which will be executed as Widget Tests.
+[   +2 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +22 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[  +32 ms] Skipping pub get: version match.
+[  +45 ms] Found plugin integration_test at /home/krutarth/development/flutter/packages/integration_test/
+[  +35 ms] Found plugin url_launcher at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher-6.3.1/
+[   +1 ms] Found plugin url_launcher_windows at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_windows-3.1.4/
+[   +3 ms] Found plugin url_launcher_web at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_web-2.4.1/
+[   +1 ms] Found plugin url_launcher_macos at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_macos-3.2.2/
+[   +1 ms] Found plugin url_launcher_linux at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_linux-3.2.1/
+[   +1 ms] Found plugin url_launcher_ios at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_ios-6.3.3/
+[        ] Found plugin url_launcher_android at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_android-6.3.16/
+[   +6 ms] Found plugin shared_preferences at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences-2.5.3/
+[        ] Found plugin shared_preferences_windows at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences_windows-2.4.1/
+[   +1 ms] Found plugin path_provider_windows at /home/krutarth/.pub-cache/hosted/pub.dev/path_provider_windows-2.3.0/
+[   +1 ms] Found plugin shared_preferences_web at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences_web-2.4.3/
+[        ] Found plugin shared_preferences_linux at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences_linux-2.4.1/
+[        ] Found plugin path_provider_linux at /home/krutarth/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1/
+[   +1 ms] Found plugin shared_preferences_foundation at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences_foundation-2.5.4/
+[        ] Found plugin shared_preferences_android at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences_android-2.4.10/
+[        ] Found plugin path_provider at /home/krutarth/.pub-cache/hosted/pub.dev/path_provider-2.1.5/
+[   +1 ms] Found plugin path_provider_foundation at /home/krutarth/.pub-cache/hosted/pub.dev/path_provider_foundation-2.4.1/
+[        ] Found plugin path_provider_android at /home/krutarth/.pub-cache/hosted/pub.dev/path_provider_android-2.2.17/
+[        ] Found plugin app_links at /home/krutarth/.pub-cache/hosted/pub.dev/app_links-3.5.1/
+[   +2 ms] Found plugin gtk at /home/krutarth/.pub-cache/hosted/pub.dev/gtk-2.1.0/
+[   +1 ms] Found plugin share_plus at /home/krutarth/.pub-cache/hosted/pub.dev/share_plus-7.2.2/
+[   +4 ms] Found plugin permission_handler at /home/krutarth/.pub-cache/hosted/pub.dev/permission_handler-11.4.0/
+[        ] Found plugin permission_handler_windows at /home/krutarth/.pub-cache/hosted/pub.dev/permission_handler_windows-0.2.1/
+[   +1 ms] Found plugin permission_handler_html at /home/krutarth/.pub-cache/hosted/pub.dev/permission_handler_html-0.1.3+5/
+[   +1 ms] Found plugin permission_handler_apple at /home/krutarth/.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/
+[        ] Found plugin permission_handler_android at /home/krutarth/.pub-cache/hosted/pub.dev/permission_handler_android-12.1.0/
+[   +4 ms] Found plugin mobile_scanner at /home/krutarth/.pub-cache/hosted/pub.dev/mobile_scanner-4.0.1/
+[   +2 ms] Found plugin image_picker at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker-1.1.2/
+[        ] Found plugin image_picker_windows at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_windows-0.2.1+1/
+[   +1 ms] Found plugin file_selector_windows at /home/krutarth/.pub-cache/hosted/pub.dev/file_selector_windows-0.9.3+4/
+[   +1 ms] Found plugin image_picker_macos at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_macos-0.2.1+2/
+[        ] Found plugin file_selector_macos at /home/krutarth/.pub-cache/hosted/pub.dev/file_selector_macos-0.9.4+3/
+[        ] Found plugin image_picker_linux at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_linux-0.2.1+2/
+[        ] Found plugin file_selector_linux at /home/krutarth/.pub-cache/hosted/pub.dev/file_selector_linux-0.9.3+2/
+[        ] Found plugin image_picker_ios at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_ios-0.8.12+2/
+[        ] Found plugin image_picker_for_web at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_for_web-3.0.6/
+[        ] Found plugin image_picker_android at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_android-0.8.12+24/
+[        ] Found plugin flutter_plugin_android_lifecycle at /home/krutarth/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.28/
+[   +2 ms] Found plugin geolocator at /home/krutarth/.pub-cache/hosted/pub.dev/geolocator-11.1.0/
+[        ] Found plugin geolocator_windows at /home/krutarth/.pub-cache/hosted/pub.dev/geolocator_windows-0.2.5/
+[   +1 ms] Found plugin geolocator_web at /home/krutarth/.pub-cache/hosted/pub.dev/geolocator_web-3.0.0/
+[        ] Found plugin geolocator_apple at /home/krutarth/.pub-cache/hosted/pub.dev/geolocator_apple-2.3.13/
+[   +1 ms] Found plugin geolocator_android at /home/krutarth/.pub-cache/hosted/pub.dev/geolocator_android-4.6.2/
+[   +6 ms] Found plugin app_settings at /home/krutarth/.pub-cache/hosted/pub.dev/app_settings-5.2.0/
+[  +35 ms] Found plugin integration_test at /home/krutarth/development/flutter/packages/integration_test/
+[  +16 ms] Found plugin url_launcher at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher-6.3.1/
+[        ] Found plugin url_launcher_windows at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_windows-3.1.4/
+[   +1 ms] Found plugin url_launcher_web at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_web-2.4.1/
+[        ] Found plugin url_launcher_macos at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_macos-3.2.2/
+[        ] Found plugin url_launcher_linux at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_linux-3.2.1/
+[        ] Found plugin url_launcher_ios at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_ios-6.3.3/
+[        ] Found plugin url_launcher_android at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_android-6.3.16/
+[   +4 ms] Found plugin shared_preferences at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences-2.5.3/
+[        ] Found plugin shared_preferences_windows at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences_windows-2.4.1/
+[        ] Found plugin path_provider_windows at /home/krutarth/.pub-cache/hosted/pub.dev/path_provider_windows-2.3.0/
+[   +1 ms] Found plugin shared_preferences_web at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences_web-2.4.3/
+[        ] Found plugin shared_preferences_linux at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences_linux-2.4.1/
+[        ] Found plugin path_provider_linux at /home/krutarth/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1/
+[        ] Found plugin shared_preferences_foundation at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences_foundation-2.5.4/
+[        ] Found plugin shared_preferences_android at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences_android-2.4.10/
+[        ] Found plugin path_provider at /home/krutarth/.pub-cache/hosted/pub.dev/path_provider-2.1.5/
+[        ] Found plugin path_provider_foundation at /home/krutarth/.pub-cache/hosted/pub.dev/path_provider_foundation-2.4.1/
+[        ] Found plugin path_provider_android at /home/krutarth/.pub-cache/hosted/pub.dev/path_provider_android-2.2.17/
+[        ] Found plugin app_links at /home/krutarth/.pub-cache/hosted/pub.dev/app_links-3.5.1/
+[        ] Found plugin gtk at /home/krutarth/.pub-cache/hosted/pub.dev/gtk-2.1.0/
+[        ] Found plugin share_plus at /home/krutarth/.pub-cache/hosted/pub.dev/share_plus-7.2.2/
+[   +2 ms] Found plugin permission_handler at /home/krutarth/.pub-cache/hosted/pub.dev/permission_handler-11.4.0/
+[        ] Found plugin permission_handler_windows at /home/krutarth/.pub-cache/hosted/pub.dev/permission_handler_windows-0.2.1/
+[        ] Found plugin permission_handler_html at /home/krutarth/.pub-cache/hosted/pub.dev/permission_handler_html-0.1.3+5/
+[        ] Found plugin permission_handler_apple at /home/krutarth/.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/
+[        ] Found plugin permission_handler_android at /home/krutarth/.pub-cache/hosted/pub.dev/permission_handler_android-12.1.0/
+[   +2 ms] Found plugin mobile_scanner at /home/krutarth/.pub-cache/hosted/pub.dev/mobile_scanner-4.0.1/
+[        ] Found plugin image_picker at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker-1.1.2/
+[        ] Found plugin image_picker_windows at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_windows-0.2.1+1/
+[        ] Found plugin file_selector_windows at /home/krutarth/.pub-cache/hosted/pub.dev/file_selector_windows-0.9.3+4/
+[        ] Found plugin image_picker_macos at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_macos-0.2.1+2/
+[        ] Found plugin file_selector_macos at /home/krutarth/.pub-cache/hosted/pub.dev/file_selector_macos-0.9.4+3/
+[        ] Found plugin image_picker_linux at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_linux-0.2.1+2/
+[        ] Found plugin file_selector_linux at /home/krutarth/.pub-cache/hosted/pub.dev/file_selector_linux-0.9.3+2/
+[        ] Found plugin image_picker_ios at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_ios-0.8.12+2/
+[        ] Found plugin image_picker_for_web at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_for_web-3.0.6/
+[        ] Found plugin image_picker_android at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_android-0.8.12+24/
+[        ] Found plugin flutter_plugin_android_lifecycle at /home/krutarth/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.28/
+[   +1 ms] Found plugin geolocator at /home/krutarth/.pub-cache/hosted/pub.dev/geolocator-11.1.0/
+[        ] Found plugin geolocator_windows at /home/krutarth/.pub-cache/hosted/pub.dev/geolocator_windows-0.2.5/
+[        ] Found plugin geolocator_web at /home/krutarth/.pub-cache/hosted/pub.dev/geolocator_web-3.0.0/
+[        ] Found plugin geolocator_apple at /home/krutarth/.pub-cache/hosted/pub.dev/geolocator_apple-2.3.13/
+[        ] Found plugin geolocator_android at /home/krutarth/.pub-cache/hosted/pub.dev/geolocator_android-4.6.2/
+[   +4 ms] Found plugin app_settings at /home/krutarth/.pub-cache/hosted/pub.dev/app_settings-5.2.0/
+[   +9 ms] Skipping generating web_plugin_registrant.dart because it is up-to-date.
+[  +14 ms] Found plugin integration_test at /home/krutarth/development/flutter/packages/integration_test/
+[  +11 ms] Found plugin url_launcher at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher-6.3.1/
+[        ] Found plugin url_launcher_windows at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_windows-3.1.4/
+[        ] Found plugin url_launcher_web at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_web-2.4.1/
+[        ] Found plugin url_launcher_macos at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_macos-3.2.2/
+[        ] Found plugin url_launcher_linux at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_linux-3.2.1/
+[        ] Found plugin url_launcher_ios at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_ios-6.3.3/
+[        ] Found plugin url_launcher_android at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_android-6.3.16/
+[   +3 ms] Found plugin shared_preferences at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences-2.5.3/
+[        ] Found plugin shared_preferences_windows at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences_windows-2.4.1/
+[        ] Found plugin path_provider_windows at /home/krutarth/.pub-cache/hosted/pub.dev/path_provider_windows-2.3.0/
+[        ] Found plugin shared_preferences_web at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences_web-2.4.3/
+[        ] Found plugin shared_preferences_linux at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences_linux-2.4.1/
+[        ] Found plugin path_provider_linux at /home/krutarth/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1/
+[        ] Found plugin shared_preferences_foundation at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences_foundation-2.5.4/
+[        ] Found plugin shared_preferences_android at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences_android-2.4.10/
+[        ] Found plugin path_provider at /home/krutarth/.pub-cache/hosted/pub.dev/path_provider-2.1.5/
+[        ] Found plugin path_provider_foundation at /home/krutarth/.pub-cache/hosted/pub.dev/path_provider_foundation-2.4.1/
+[        ] Found plugin path_provider_android at /home/krutarth/.pub-cache/hosted/pub.dev/path_provider_android-2.2.17/
+[        ] Found plugin app_links at /home/krutarth/.pub-cache/hosted/pub.dev/app_links-3.5.1/
+[        ] Found plugin gtk at /home/krutarth/.pub-cache/hosted/pub.dev/gtk-2.1.0/
+[        ] Found plugin share_plus at /home/krutarth/.pub-cache/hosted/pub.dev/share_plus-7.2.2/
+[   +2 ms] Found plugin permission_handler at /home/krutarth/.pub-cache/hosted/pub.dev/permission_handler-11.4.0/
+[        ] Found plugin permission_handler_windows at /home/krutarth/.pub-cache/hosted/pub.dev/permission_handler_windows-0.2.1/
+[        ] Found plugin permission_handler_html at /home/krutarth/.pub-cache/hosted/pub.dev/permission_handler_html-0.1.3+5/
+[        ] Found plugin permission_handler_apple at /home/krutarth/.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/
+[        ] Found plugin permission_handler_android at /home/krutarth/.pub-cache/hosted/pub.dev/permission_handler_android-12.1.0/
+[   +2 ms] Found plugin mobile_scanner at /home/krutarth/.pub-cache/hosted/pub.dev/mobile_scanner-4.0.1/
+[        ] Found plugin image_picker at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker-1.1.2/
+[        ] Found plugin image_picker_windows at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_windows-0.2.1+1/
+[        ] Found plugin file_selector_windows at /home/krutarth/.pub-cache/hosted/pub.dev/file_selector_windows-0.9.3+4/
+[        ] Found plugin image_picker_macos at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_macos-0.2.1+2/
+[        ] Found plugin file_selector_macos at /home/krutarth/.pub-cache/hosted/pub.dev/file_selector_macos-0.9.4+3/
+[        ] Found plugin image_picker_linux at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_linux-0.2.1+2/
+[        ] Found plugin file_selector_linux at /home/krutarth/.pub-cache/hosted/pub.dev/file_selector_linux-0.9.3+2/
+[        ] Found plugin image_picker_ios at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_ios-0.8.12+2/
+[        ] Found plugin image_picker_for_web at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_for_web-3.0.6/
+[        ] Found plugin image_picker_android at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_android-0.8.12+24/
+[        ] Found plugin flutter_plugin_android_lifecycle at /home/krutarth/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.28/
+[        ] Found plugin geolocator at /home/krutarth/.pub-cache/hosted/pub.dev/geolocator-11.1.0/
+[        ] Found plugin geolocator_windows at /home/krutarth/.pub-cache/hosted/pub.dev/geolocator_windows-0.2.5/
+[        ] Found plugin geolocator_web at /home/krutarth/.pub-cache/hosted/pub.dev/geolocator_web-3.0.0/
+[        ] Found plugin geolocator_apple at /home/krutarth/.pub-cache/hosted/pub.dev/geolocator_apple-2.3.13/
+[        ] Found plugin geolocator_android at /home/krutarth/.pub-cache/hosted/pub.dev/geolocator_android-4.6.2/
+[   +3 ms] Found plugin app_settings at /home/krutarth/.pub-cache/hosted/pub.dev/app_settings-5.2.0/
+[   +2 ms] Generating /home/krutarth/AttendSure/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+[   +1 ms] Skipping generating GeneratedPluginRegistrant.java because it is up-to-date.
+[  +57 ms] No packages with native assets. Skipping native assets compilation.
+[   +1 ms] Writing native assets json to file:///home/krutarth/AttendSure/build/native_assets/linux/native_assets.json.
+[   +1 ms] Writing /home/krutarth/AttendSure/build/native_assets/linux/native_assets.json done.
+[ +121 ms] running test package with arguments: [--no-color, --chain-stack-traces, --, file:///home/krutarth/AttendSure/test/ui/professor_dashboard_test.dart?]
+00:00 +0: loading /home/krutarth/AttendSure/test/ui/professor_dashboard_test.dart                                                                                                                      [ +138 ms] test 0: starting test /home/krutarth/AttendSure/test/ui/professor_dashboard_test.dart
+[   +2 ms] Stopping scan for flutter_test_config.dart; found project root at /home/krutarth/AttendSure
+[   +2 ms] Compiler will use the following file as its incremental dill file: /tmp/flutter_tools.TGLYHB/flutter_test_compiler.ODOVPH/output.dill
+[        ] Listening to compiler controller...
+[   +6 ms] Compiling file:///tmp/flutter_tools.TGLYHB/flutter_test_listener.LLNFYP/listener.dart
+[  +16 ms] Found plugin integration_test at /home/krutarth/development/flutter/packages/integration_test/
+[  +12 ms] Found plugin url_launcher at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher-6.3.1/
+[        ] Found plugin url_launcher_windows at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_windows-3.1.4/
+[   +1 ms] Found plugin url_launcher_web at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_web-2.4.1/
+[        ] Found plugin url_launcher_macos at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_macos-3.2.2/
+[        ] Found plugin url_launcher_linux at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_linux-3.2.1/
+[        ] Found plugin url_launcher_ios at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_ios-6.3.3/
+[        ] Found plugin url_launcher_android at /home/krutarth/.pub-cache/hosted/pub.dev/url_launcher_android-6.3.16/
+[   +3 ms] Found plugin shared_preferences at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences-2.5.3/
+[        ] Found plugin shared_preferences_windows at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences_windows-2.4.1/
+[        ] Found plugin path_provider_windows at /home/krutarth/.pub-cache/hosted/pub.dev/path_provider_windows-2.3.0/
+[        ] Found plugin shared_preferences_web at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences_web-2.4.3/
+[        ] Found plugin shared_preferences_linux at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences_linux-2.4.1/
+[        ] Found plugin path_provider_linux at /home/krutarth/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1/
+[        ] Found plugin shared_preferences_foundation at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences_foundation-2.5.4/
+[        ] Found plugin shared_preferences_android at /home/krutarth/.pub-cache/hosted/pub.dev/shared_preferences_android-2.4.10/
+[        ] Found plugin path_provider at /home/krutarth/.pub-cache/hosted/pub.dev/path_provider-2.1.5/
+[        ] Found plugin path_provider_foundation at /home/krutarth/.pub-cache/hosted/pub.dev/path_provider_foundation-2.4.1/
+[        ] Found plugin path_provider_android at /home/krutarth/.pub-cache/hosted/pub.dev/path_provider_android-2.2.17/
+[        ] Found plugin app_links at /home/krutarth/.pub-cache/hosted/pub.dev/app_links-3.5.1/
+[        ] Found plugin gtk at /home/krutarth/.pub-cache/hosted/pub.dev/gtk-2.1.0/
+[        ] Found plugin share_plus at /home/krutarth/.pub-cache/hosted/pub.dev/share_plus-7.2.2/
+[   +2 ms] Found plugin permission_handler at /home/krutarth/.pub-cache/hosted/pub.dev/permission_handler-11.4.0/
+[        ] Found plugin permission_handler_windows at /home/krutarth/.pub-cache/hosted/pub.dev/permission_handler_windows-0.2.1/
+[   +1 ms] Found plugin permission_handler_html at /home/krutarth/.pub-cache/hosted/pub.dev/permission_handler_html-0.1.3+5/
+[        ] Found plugin permission_handler_apple at /home/krutarth/.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.7/
+[        ] Found plugin permission_handler_android at /home/krutarth/.pub-cache/hosted/pub.dev/permission_handler_android-12.1.0/
+[   +8 ms] Found plugin mobile_scanner at /home/krutarth/.pub-cache/hosted/pub.dev/mobile_scanner-4.0.1/
+[   +1 ms] Found plugin image_picker at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker-1.1.2/
+[        ] Found plugin image_picker_windows at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_windows-0.2.1+1/
+[        ] Found plugin file_selector_windows at /home/krutarth/.pub-cache/hosted/pub.dev/file_selector_windows-0.9.3+4/
+[        ] Found plugin image_picker_macos at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_macos-0.2.1+2/
+[        ] Found plugin file_selector_macos at /home/krutarth/.pub-cache/hosted/pub.dev/file_selector_macos-0.9.4+3/
+[        ] Found plugin image_picker_linux at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_linux-0.2.1+2/
+[        ] Found plugin file_selector_linux at /home/krutarth/.pub-cache/hosted/pub.dev/file_selector_linux-0.9.3+2/
+[        ] Found plugin image_picker_ios at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_ios-0.8.12+2/
+[        ] Found plugin image_picker_for_web at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_for_web-3.0.6/
+[        ] Found plugin image_picker_android at /home/krutarth/.pub-cache/hosted/pub.dev/image_picker_android-0.8.12+24/
+[        ] Found plugin flutter_plugin_android_lifecycle at /home/krutarth/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.28/
+[   +1 ms] Found plugin geolocator at /home/krutarth/.pub-cache/hosted/pub.dev/geolocator-11.1.0/
+[        ] Found plugin geolocator_windows at /home/krutarth/.pub-cache/hosted/pub.dev/geolocator_windows-0.2.5/
+[        ] Found plugin geolocator_web at /home/krutarth/.pub-cache/hosted/pub.dev/geolocator_web-3.0.0/
+[        ] Found plugin geolocator_apple at /home/krutarth/.pub-cache/hosted/pub.dev/geolocator_apple-2.3.13/
+[        ] Found plugin geolocator_android at /home/krutarth/.pub-cache/hosted/pub.dev/geolocator_android-4.6.2/
+[   +4 ms] Found plugin app_settings at /home/krutarth/.pub-cache/hosted/pub.dev/app_settings-5.2.0/
+[   +4 ms] Skipping generating dart_plugin_registrant.dart because it is up-to-date.
+[   +3 ms] /home/krutarth/development/flutter/bin/cache/dart-sdk/bin/dartaotruntime /home/krutarth/development/flutter/bin/cache/dart-sdk/bin/snapshots/frontend_server_aot.dart.snapshot --sdk-root /home/krutarth/development/flutter/bin/cache/artifacts/engine/common/flutter_patched_sdk/ --incremental --no-print-incremental-dependencies --target=flutter --experimental-emit-debug-metadata -DFLUTTER_VERSION=3.35.3 -DFLUTTER_CHANNEL=stable -DFLUTTER_GIT_URL=https://github.com/flutter/flutter.git -DFLUTTER_FRAMEWORK_REVISION=a402d9a437 -DFLUTTER_ENGINE_REVISION=ddf47dd3ff -DFLUTTER_DART_VERSION=3.9.2 --output-dill /tmp/flutter_tools.TGLYHB/flutter_test_compiler.ODOVPH/output.dill --packages /home/krutarth/AttendSure/.dart_tool/package_config.json -Ddart.vm.profile=false -Ddart.vm.product=false --enable-asserts --track-widget-creation --initialize-from-dill /home/krutarth/AttendSure/build/test_cache/build/b9dbe592fc2ae558329e0a126bb30b5a.cache.dill.track.dill --verbosity=error
+[  +10 ms] <- compile file:///tmp/flutter_tools.TGLYHB/flutter_test_listener.LLNFYP/listener.dart
+00:01 +0: loading /home/krutarth/AttendSure/test/ui/professor_dashboard_test.dart                                                                                                                      [+1773 ms] <- accept
+[        ] <- reset
+[        ] Compiling file:///tmp/flutter_tools.TGLYHB/flutter_test_listener.LLNFYP/listener.dart took 1863ms
+[        ] test 0: starting test device
+[   +5 ms] test 0: awaiting connection to test device
+[   +2 ms] test 0: VM Service uri is not available
+[   +5 ms] test 0: test harness socket server is running at port:45161
+[   +1 ms] Using this directory for fonts configuration: /tmp/flutter_tools.TGLYHB/flutter_test_fonts.MTHRGB
+[        ] test 0: Starting flutter_tester process with command=[/home/krutarth/development/flutter/bin/cache/artifacts/engine/linux-x64/flutter_tester, --disable-vm-service, --enable-checked-mode, --verify-entry-points, --enable-software-rendering, --skia-deterministic-rendering, --enable-dart-profiling, --non-interactive, --use-test-fonts, --disable-asset-fonts, --packages=/home/krutarth/AttendSure/.dart_tool/package_config.json, --flutter-assets-dir=/home/krutarth/AttendSure/build/unit_test_assets, /tmp/flutter_tools.TGLYHB/flutter_test_listener.LLNFYP/listener.dart.dill], environment={FLUTTER_TEST: true, FONTCONFIG_FILE: /tmp/flutter_tools.TGLYHB/flutter_test_fonts.MTHRGB/fonts.conf, SERVER_PORT: 45161, APP_NAME: SmartTrack, UNIT_TEST_ASSETS: /home/krutarth/AttendSure/build/unit_test_assets}
+[   +6 ms] test 0: Started flutter_tester process at pid 259610
+00:02 +0: loading /home/krutarth/AttendSure/test/ui/professor_dashboard_test.dart                                                                                                                      [ +335 ms] test 0: connected to test device, now awaiting test result
+[        ] test 0: Waiting for test harness or tests to finish
+00:02 +0: (setUpAll)                                                                                                                                                                                   00:02 +0: (setUpAll)                                                                                                                                                                                   
+supabase.supabase_flutter: WARNING: Error while receiving deeplink MissingPluginException(No implementation found for method getInitialAppLink on channel com.llfbandit.app_links/messages)
+supabase.supabase_flutter: INFO: ***** Supabase init completed ***** 
+00:02 +0: Professor Dashboard Interaction Test                                                                                                                                                         00:03 +0: Professor Dashboard Interaction Test                                                                                                                                                         00:03 +0: Professor Dashboard Interaction Test                                                                                                                                                         
+Building StartLectureView
+Selected course ID: 
+Number of assigned courses: 0
+Rebuilding body - isLoading: false
+Loading professor data...
+Starting to load professor data...
+Current user:  {currentUser?.email}
+No authenticated user found
+Error loading professor data: Exception: Not authenticated
+Stack trace: #0      ProfessorController.loadProfessorData (package:SmartTrack/modules/professor/controllers/professor_controller.dart:267:9)
+#1      StartLectureView.build.<anonymous closure> (package:SmartTrack/modules/professor/views/start_lecture_view.dart:32:18)
+#2      SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1434:15)
+#3      SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1361:11)
+#4      AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1335:9)
+#5      _rootRun (dart:async/zone.dart:1525:13)
+#6      _CustomZone.run (dart:async/zone.dart:1422:19)
+#7      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#8      AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1324:27)
+#9      WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:719:23)
+#10     _rootRun (dart:async/zone.dart:1525:13)
+#11     _CustomZone.run (dart:async/zone.dart:1422:19)
+#12     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#13     WidgetTester.pumpAndSettle (package:flutter_test/src/widget_tester.dart:712:27)
+#14     main.<anonymous closure> (file:///home/krutarth/AttendSure/test/ui/professor_dashboard_test.dart:155:18)
+<asynchronous suspension>
+#15     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#16     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1059:5)
+<asynchronous suspension>
+#17     StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+
+Rebuilding body - isLoading: false
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+The finder "Found 0 widgets with icon "IconData(U+0EEDF)" descending from widgets with type
+"NavigationBar": []" (used in a call to "tap()") could not find any matching widgets.
+
+When the exception was thrown, this was the stack:
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2009:7)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1861:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1041:7)
+#3      main.<anonymous closure> (file:///home/krutarth/AttendSure/test/ui/professor_dashboard_test.dart:163:18)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1059:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  Professor Dashboard Interaction Test
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:03 +0 -1: Professor Dashboard Interaction Test [E]                                                                                                                                                  
+  Test failed. See exception logs above.
+  The test description was: Professor Dashboard Interaction Test
+  
+
+To run this test again: /home/krutarth/development/flutter/bin/cache/dart-sdk/bin/dart test /home/krutarth/AttendSure/test/ui/professor_dashboard_test.dart -p vm --plain-name 'Professor Dashboard Interaction Test'
+00:03 +0 -1: (tearDownAll)                                                                                                                                                                             [+1462 ms] test 0: Test harness is no longer needed by test process
+[        ] test 0: finished
+[        ] test 0: cleaning up...
+[        ] test 0: ensuring test device is terminated.
+[        ] test 0: Terminating flutter_tester process
+[        ] test 0: Shutting down DevTools server
+[        ] test 0: Test process is no longer needed by test harness
+[        ] test 0: Shutting down test harness socket server
+[  +14 ms] test 0: flutter_tester process at pid 259610 exited with code=-9
+[        ] test 0: deleting temporary directory
+[  +12 ms] test 0: finished
+00:03 +0 -1: Some tests failed.                                                                                                                                                                        
+[   +8 ms] Deleting /tmp/flutter_tools.TGLYHB/flutter_test_compiler.ODOVPH...
+[  +18 ms] killing pid 259585
+[  +51 ms] Deleting /tmp/flutter_tools.TGLYHB/flutter_test_fonts.MTHRGB...
+[   +2 ms] test package returned with exit code 1
+[        ] Runtime for phase TestRunner: Wall-clock: 0:00:03.951802; combined: 0:00:03.951824.
+[        ] Runtime for phase Compile: Wall-clock: 0:00:01.864228; combined: 0:00:01.864261.
+[        ] Runtime for phase Run: Wall-clock: 0:00:01.818949; combined: 0:00:01.818955.
+[        ] Runtime for phase CoverageTotal: Wall-clock: 0:00:00.000000; combined: 0:00:00.000000.
+[        ] Runtime for phase CoverageCollect: Wall-clock: 0:00:00.000000; combined: 0:00:00.000000.
+[        ] Runtime for phase CoverageParseJson: Wall-clock: 0:00:00.000000; combined: 0:00:00.000000.
+[        ] Runtime for phase CoverageAddHitmap: Wall-clock: 0:00:00.000000; combined: 0:00:00.000000.
+[        ] Runtime for phase CoverageDataCollect: Wall-clock: 0:00:00.000000; combined: 0:00:00.000000.
+[        ] Runtime for phase WatcherFinishedTest: Wall-clock: 0:00:00.000605; combined: 0:00:00.000607.
+[   +1 ms] "flutter test" took 4,505ms.
+[  +44 ms] 
+           #0      throwToolExit (package:flutter_tools/src/base/common.dart:34:3)
+           #1      TestCommand.runCommand (package:flutter_tools/src/commands/test.dart:714:7)
+           <asynchronous suspension>
+           #2      FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1581:27)
+           <asynchronous suspension>
+           #3      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+           <asynchronous suspension>
+           #4      CommandRunner.runCommand (package:args/command_runner.dart:212:13)
+           <asynchronous suspension>
+           #5      FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:503:9)
+           <asynchronous suspension>
+           #6      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+           <asynchronous suspension>
+           #7      FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:438:5)
+           <asynchronous suspension>
+           #8      run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:98:11)
+           <asynchronous suspension>
+           #9      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+           <asynchronous suspension>
+           #10     main (package:flutter_tools/executable.dart:101:3)
+           <asynchronous suspension>
+
+
+[        ] Running 3 shutdown hooks
+[   +1 ms] Shutdown hooks complete
+[ +260 ms] exiting with code 1

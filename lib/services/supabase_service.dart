@@ -52,6 +52,14 @@ class SupabaseService {
         retries: _maxAttempts,
       );
 
+      try {
+        Supabase.instance;
+        debugPrint('Supabase already initialized');
+        return;
+      } catch (_) {
+        // Not initialized, proceed
+      }
+
       await Supabase.initialize(
         url: supabaseUrl,
         anonKey: supabaseAnonKey,

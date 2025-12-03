@@ -5,6 +5,7 @@ import 'student_attendance_history_view.dart';
 import 'student_profile_view.dart';
 import '../controllers/student_controller.dart';
 import '../controllers/student_attendance_history_controller.dart';
+import '../controllers/student_auth_controller.dart';
 
 class StudentMainLayout extends StatefulWidget {
   const StudentMainLayout({Key? key}) : super(key: key);
@@ -17,15 +18,24 @@ class _StudentMainLayoutState extends State<StudentMainLayout> {
   static final RxInt currentIndex = 0.obs;
   final studentController = Get.find<StudentController>();
 
-  @override
-  void initState() {
-    super.initState();
-    // Initialize controllers here instead of in build
-    Get.put(StudentAttendanceHistoryController());
-    if (!Get.isRegistered<RxInt>(tag: 'bottomNavIndex')) {
-      Get.put(currentIndex, tag: 'bottomNavIndex', permanent: true);
-    }
+ @override
+void initState() {
+  super.initState();
+
+  // Put controllers
+  if (!Get.isRegistered<StudentAuthController>()) {
+    Get.put(StudentAuthController());
   }
+
+  if (!Get.isRegistered<StudentAttendanceHistoryController>()) {
+    Get.put(StudentAttendanceHistoryController());
+  }
+
+  if (!Get.isRegistered<RxInt>(tag: 'bottomNavIndex')) {
+    Get.put(currentIndex, tag: 'bottomNavIndex', permanent: true);
+  }
+}
+
 
   @override
   Widget build(BuildContext context) {

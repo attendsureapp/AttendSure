@@ -27,10 +27,10 @@ void main() async {
 
     // Run the app with DevicePreview (enabled only in debug)
     runApp(
-      DevicePreview(
-        enabled: !bool.fromEnvironment('dart.vm.product'),
-        builder: (context) => const MyApp(),
-      ),
+      // DevicePreview(
+      //   enabled: !bool.fromEnvironment('dart.vm.product'),
+         const MyApp(),
+      // ),
     );
 
     // Initialize admin settings controller

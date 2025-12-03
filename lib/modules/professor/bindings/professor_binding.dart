@@ -4,6 +4,7 @@ import '../controllers/professor_controller.dart';
 import '../controllers/attendance_controller.dart';
 import '../controllers/passcode_controller.dart';
 import '../controllers/lecture_session_controller.dart';
+import '../controllers/my_courses_controller.dart';
 
 class ProfessorBinding extends Bindings {
   @override
@@ -28,5 +29,8 @@ class ProfessorBinding extends Bindings {
     if (!Get.isRegistered<PasscodeController>()) {
       Get.put(PasscodeController(), permanent: true);
     }
+
+    // Initialize MyCoursesController
+    Get.lazyPut(() => MyCoursesController());
   }
 } 

@@ -6,7 +6,7 @@ import '../controllers/my_courses_controller.dart';
 class MyCoursesView extends StatelessWidget {
   MyCoursesView({Key? key}) : super(key: key);
 
-  final MyCoursesController controller = Get.put(MyCoursesController());
+  final MyCoursesController controller = Get.find<MyCoursesController>();
 
   @override
   Widget build(BuildContext context) {
