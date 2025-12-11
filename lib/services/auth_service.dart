@@ -74,6 +74,8 @@ class AuthService {
         }
         print('Professor login failed - Invalid credentials');
         return null;
+      } else if (userType.toLowerCase() == 'admin') {
+         return await adminLogin(username: username, password: password);
       } else {
         // Student login logic using email
         print('Attempting student login...');
@@ -174,6 +176,65 @@ class AuthService {
       }
       return null;
     }
+  }
+
+  Future<Map<String, dynamic>?> adminLogin({
+    required String username,
+    required String password,
+  }) async {
+    print('Attempting admin login with email: $username');
+          
+    // First check if admin exists without password check
+    final adminExists = await supabase
+        .from('admins')
+        .select()
+        .eq('email', username.trim())
+        .maybeSingle();
+        
+    if (adminExists != null) {
+      print('Admin exists check: $adminExists');
+      
+      // Clean up passwords by removing whitespace and newlines
+      final storedPassword = adminExists['password'].toString().trim().replaceAll(RegExp(r'\s'), '');
+      final inputPassword = password.trim().replaceAll(RegExp(r'\s'), '');
+      
+      print('Cleaned stored password: "$storedPassword" (${storedPassword.length} chars)');
+      print('Cleaned input password: "$inputPassword" (${inputPassword.length} chars)');
+      
+      // Try direct password comparison with cleaned passwords
+      if (storedPassword == inputPassword) {
+        print('Password match successful after cleaning');
+        
+        // Ensure Supabase Auth session exists
+        try {
+           await supabase.auth.signInWithPassword(
+            email: username,
+            password: password,
+          );
+        } catch (e) {
+           // If sign in fails, try to sign up (create auth user if missing but exists in DB)
+           try {
+             await supabase.auth.signUp(
+               email: username,
+               password: password,
+             );
+           } catch (_) {
+             // Ignore errors here, we trust the DB check
+           }
+        }
+
+        final enrichedResponse = Map<String, dynamic>.from(adminExists);
+        enrichedResponse['user_type'] = 'admin';
+        return enrichedResponse;
+      } else {
+        print('Password comparison failed after cleaning');
+        print('ASCII codes of cleaned stored password: ${storedPassword.codeUnits}');
+        print('ASCII codes of cleaned input password: ${inputPassword.codeUnits}');
+      }
+    } else {
+      print('No admin found with this email');
+    }
+    return null;
   }
 
   Future<void> signOut() async {
