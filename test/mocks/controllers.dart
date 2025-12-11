@@ -1,3 +1,14 @@
+import 'package:SmartTrack/controllers/attendance_controller.dart';
+import 'package:SmartTrack/controllers/auth_controller.dart';
+import 'package:SmartTrack/controllers/professor_controller.dart';
+import 'package:SmartTrack/models/professor.dart';
+import 'package:SmartTrack/modules/professor/controllers/lecture_session_controller.dart';
+import 'package:SmartTrack/modules/professor/controllers/my_courses_controller.dart';
+import 'package:SmartTrack/modules/professor/controllers/passcode_controller.dart';
+import 'package:SmartTrack/modules/student/controllers/student_attendance_history_controller.dart';
+import 'package:SmartTrack/modules/student/controllers/student_auth_controller.dart';
+import 'package:SmartTrack/modules/student/controllers/student_controller.dart';
+
 class MockAuthController extends AuthController {}
 
 class MockStudentAuthController extends StudentAuthController {}
@@ -11,6 +22,7 @@ class MockProfessorController extends ProfessorController {
       email: 'prof@test.com',
       program: 'CS',
       phone: '1234567890',
+      // assignedCourses: [],
     );
     isLoading.value = false;
   }
