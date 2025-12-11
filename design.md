@@ -1,72 +1,153 @@
+---
+
 # Project Design Commentary
 
-This document outlines the architectural decisions, design principles, and key refactoring steps undertaken to improve the **AttendSure** application.
+This document outlines the architectural decisions, design principles, and major refactoring efforts undertaken to enhance the overall structure, maintainability, and scalability of the AttendSure application.
+
+---
 
 ## 1. Architectural Improvements
 
-### Modular Architecture (Package by Feature)
-We have structured the application using a **Modular Architecture**. Instead of grouping files by type (e.g., all controllers in one folder, all views in another), we group them by **feature** (e.g., `auth`, `professor`, `student`, `admin`).
+### Modular Architecture (Feature-Based Structure)
 
-*   **Before**: A monolithic structure where finding all files related to "Authentication" required jumping between `controllers/`, `views/`, and `models/`.
-*   **After**: `lib/modules/auth/` contains everything related to authentication:
-    *   `controllers/`: State management logic.
-    *   `views/`: UI screens.
-    *   `models/`: Data structures.
-    *   `bindings/`: Dependency injection setup.
+The application is organized using a **feature-based modular architecture**. Instead of grouping files by type (such as controllers, views, or models), the project is structured by domain-specific modules. For example, all authentication-related components reside inside `lib/modules/auth/`, including:
 
-**Benefit**: This improves scalability and maintainability. Developers can work on the "Student" module without accidentally impacting the "Admin" module.
+• Controllers
+• Views
+• Models
+• Bindings
+
+This structure ensures that each module is self-contained and easier to understand.
+
+**Previous Approach:**
+Files belonging to the same feature were scattered across multiple directories, making navigation and maintenance difficult.
+
+**Current Approach:**
+Feature-specific modules contain all related logic, reducing coupling between different parts of the system.
+
+**Resulting Benefits:**
+• Improved maintainability
+• Easier scalability
+• Clear separation between unrelated features
+• Simplified onboarding for new developers
+
+---
 
 ### Service Layer Pattern
-We implemented a dedicated **Service Layer** (e.g., `SupabaseService`, `AuthService`) to handle all external data interactions.
 
-*   **Design**: The UI and Controllers do not make direct HTTP or database calls. Instead, they call methods like `SupabaseService.getPrograms()`.
-*   **Benefit**:
-    *   **Decoupling**: The UI is agnostic of the backend implementation. If we switch from Supabase to Firebase, we only update the Service Layer.
-    *   **Resilience**: We implemented a centralized `withRetry` mechanism in `SupabaseService` to automatically retry failed network requests, improving app stability.
+A dedicated **Service Layer** has been introduced to manage all external interactions such as database operations, authentication, and API calls. Examples include `SupabaseService` and `AuthService`.
+
+**Design Characteristics:**
+• Controllers and UI components do not directly perform HTTP or database calls.
+• All external communication is centralized in service classes.
+
+**Key Outcomes:**
+• Decoupling between business logic and data access
+• Easy replacement of backend technologies without affecting UI or controllers
+• Consistent error handling across the application
+• A unified retry mechanism (`withRetry`) for more robust network operations
+
+---
 
 ### Middleware for Route Protection
-We introduced **Middleware** (e.g., `AuthMiddleware`) to handle route protection and navigation guards.
 
-*   **Design**: Middleware intercepts navigation events to check if a user is authenticated or has the correct role before allowing access to a route.
-*   **Benefit**:
-    *   **Security**: Prevents unauthorized access to sensitive pages (e.g., Admin Dashboard).
-    *   **Centralized Logic**: Authentication checks are defined in one place rather than being repeated in every controller or view.
+Middleware components, such as `AuthMiddleware`, now enforce access control and user role validation during navigation.
 
-## 2. Design Principles Applied (SOLID)
+**Functionality:**
+• Intercepts routing actions to ensure the user is authenticated
+• Restricts access based on user roles (Admin, Professor, Student)
+
+**Advantages:**
+• Enhanced security
+• Centralized access management
+• Reduced duplication of authentication logic across screens
+
+---
+
+## 2. Design Principles (SOLID)
 
 ### Single Responsibility Principle (SRP)
-We strictly separated the application into three layers, ensuring each class has a single reason to change:
-*   **UI (Views)**: Responsible *only* for rendering the interface and capturing user input.
-*   **State Management (Controllers)**: Responsible for business logic and managing the state of the UI (using GetX).
-*   **Data Access (Services)**: Responsible for communicating with the backend.
-    *   *Example*: `AuthService` handles the raw API calls for login/signup, while `AuthController` handles the form validation and UI state (loading spinners).
+
+Each component in the system has a clearly defined responsibility:
+
+• **Views:** Manage only the visual layout and user input
+• **Controllers:** Handle UI state and business logic
+• **Services:** Manage data operations and external communication
+
+**Example:**
+`AuthService` handles authentication logic, while `AuthController` focuses solely on updating UI state and managing user interactions.
+
+---
 
 ### Open/Closed Principle (OCP)
-The application is designed to be open for extension but closed for modification.
-*   **Modules**: New features (e.g., a "Parent" portal) can be added as new modules (`lib/modules/parent/`) without modifying the existing `student` or `professor` modules.
-*   **Routing**: The `AppRoutes` system allows adding new routes without changing the core navigation logic.
+
+The system supports adding new modules and features without modifying existing ones.
+
+**Examples:**
+• A new “Parent” module can be added without modifying the Student or Professor modules.
+• New routes can be introduced through the centralized `AppRoutes` configuration without altering existing navigation code.
+
+---
 
 ### Dependency Inversion Principle (DIP)
-We use Dependency Injection to decouple high-level modules from low-level modules.
-*   **Implementation**: We use GetX's Dependency Injection system (`Get.put`, `Get.find`).
-*   **Example**: Controllers do not instantiate Services directly. Instead, Services are injected. This makes it easy to swap out a real `AuthService` for a `MockAuthService` during testing, as seen in our test files.
 
-## 3. Key Refactoring
+High-level modules depend on abstractions rather than concrete implementations, using GetX’s dependency injection mechanism.
 
-### Centralized Supabase Client & Error Handling
-*   **Problem**: Database calls were scattered across widgets, with inconsistent error handling and no retry logic.
-*   **Refactoring**: Moved all Supabase interactions to `SupabaseService`.
-*   **Improvement**: Added a `withRetry` wrapper around all calls to handle network flakes gracefully. Added centralized error logging.
+**Implementation:**
+• Services are injected into controllers using `Get.put` and `Get.find`
+• Makes testing simpler by allowing service mocks to be injected in place of real services
 
-### Refactoring Auth Logic to Service Layer
-*   **Problem**: `AuthController` contained mixed responsibilities—handling UI state *and* direct database queries.
-*   **Refactoring**: Extracted authentication logic (Admin, Student, Professor login) into `AuthService`.
-*   **Improvement**: `AuthController` became lighter and focused solely on user interaction, while `AuthService` became a reusable component for auth logic.
+---
 
-### Reusable Widgets & Dialogs
-*   **Refactoring**: Extracted common UI elements (like `ChangePasswordDialog`) into reusable widgets.
-*   **Improvement**: Reduces code duplication and ensures UI consistency across the app.
+## 3. Key Refactoring Highlights
 
-### Centralized Routing
-*   **Refactoring**: Moved all route definitions to `AppRoutes` and used named routes for navigation.
-*   **Improvement**: Makes navigation logic easier to manage and refactor. Hardcoded strings are replaced with constants, reducing typos.
+### Centralized Supabase Client and Error Handling
+
+**Initial Issue:**
+Supabase calls were scattered across multiple widgets and controllers, resulting in inconsistent error handling and duplicated logic.
+
+**Refactoring:**
+• All database interactions moved to `SupabaseService`
+• Unified `withRetry` wrapper implemented for all operations
+• Centralized exception logging added for debugging
+
+**Outcome:**
+Cleaner, more reliable code with unified data access patterns.
+
+---
+
+### Authentication Logic Extraction
+
+**Initial Issue:**
+`AuthController` mixed UI logic with direct database queries, creating tightly coupled and hard-to-test code.
+
+**Refactoring:**
+• All authentication operations moved to `AuthService`
+• `AuthController` now strictly manages UI state (loading, validation, navigation)
+
+**Outcome:**
+More modular and testable architecture.
+
+---
+
+### Reusable Widgets and Dialogs
+
+Common UI components such as the `ChangePasswordDialog` were extracted into reusable widgets.
+
+**Benefits:**
+• Consistent UI patterns
+• Reduced code duplication
+• Simplified updates to shared components
+
+---
+
+### Centralized Routing Structure
+
+Route definitions were consolidated into a single `AppRoutes` file, and named routes were adopted across the project.
+
+**Advantages:**
+• Eliminates scattered hardcoded route strings
+• Simplifies route modification and maintenance
+• Enables better navigation structure and readability
+
+---
