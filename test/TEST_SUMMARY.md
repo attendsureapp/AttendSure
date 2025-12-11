@@ -1,121 +1,165 @@
-# Detailed Test Coverage Report
+# Test Coverage Report
 
-This document provides a comprehensive analysis of the existing tests in the `test` directory, detailing the purpose, scenarios covered, and observations for each test file.
+This document provides a comprehensive analysis of the existing tests in the `test` directory. It outlines the purpose of each test file and the scenarios covered.
+
+---
 
 ## 1. Unit Tests
 
 ### Models
 
 #### `test/models/professor_test.dart`
-*   **Purpose**: Verifies the data integrity and logic of the `Professor` and `CourseAssignment` models.
-*   **Components Tested**: `Professor`, `CourseAssignment`.
-*   **Scenarios Covered**:
-    *   **`fromJson`**: Ensures a `Professor` object is correctly instantiated from a JSON map, including nested `CourseAssignment` lists.
-    *   **`dayName` Getter**: Verifies that the `dayName` getter in `CourseAssignment` correctly converts an integer (e.g., 1) to a string (e.g., 'Monday').
-*   **Status**: ✅ Functional.
+
+Purpose:
+Ensures that the `Professor` and `CourseAssignment` models work correctly and maintain data integrity.
+
+Components Tested:
+Professor, CourseAssignment.
+
+Scenarios Covered:
+
+1. fromJson: Validates that a `Professor` object is correctly created from a JSON map, including nested `CourseAssignment` entries.
+2. dayName Getter: Ensures that the integer representation of a day is correctly translated to its weekday name.
 
 #### `test/models/attendance_test.dart`
-*   **Purpose**: Verifies serialization and deserialization of the `Attendance` model.
-*   **Components Tested**: `Attendance`.
-*   **Scenarios Covered**:
-    *   **`fromJson`**: Ensures correct parsing of JSON data into an `Attendance` object, including `DateTime` parsing.
-    *   **`toJson`**: Ensures an `Attendance` object is correctly converted back to a JSON map.
-*   **Status**: ✅ Functional.
+
+Purpose:
+Validates the serialization and deserialization of the `Attendance` model.
+
+Components Tested:
+Attendance.
+
+Scenarios Covered:
+
+1. fromJson: Ensures JSON data is correctly mapped to an `Attendance` object, including proper `DateTime` parsing.
+2. toJson: Confirms that an `Attendance` object is correctly converted back to a JSON map.
+
+---
 
 ### Services
 
 #### `test/services/course_import_service_test.dart`
-*   **Purpose**: Intended to test `CourseImportService`.
-*   **Observations**:
-    *   ⚠️ **Placeholder**: The file currently contains only a placeholder test (`expect(true, true)`).
-    *   **Comments**: Developer notes indicate difficulty in testing private methods (`_extractProgramCode`, etc.) and suggest that `importDAIICTTimetable` requires integration testing due to Supabase and file I/O dependencies.
-*   **Status**: 🚧 Incomplete / Placeholder.
+
+Purpose:
+Intended to test the `CourseImportService`.
+
+Observations:
+The file currently includes only a placeholder test.
+Private helper methods such as `_extractProgramCode` cannot be tested directly.
+The main method `importDAIICTTimetable` requires integration testing due to Supabase and file import dependencies.
+
+---
 
 ### Controllers
 
 #### `test/controllers/auth_controller_test.dart`
-*   **Purpose**: Intended to test `AuthController`.
-*   **Observations**:
-    *   ⚠️ **Placeholder**: Contains only a placeholder test.
-*   **Status**: 🚧 Incomplete / Placeholder.
+
+Purpose:
+Intended to test the `AuthController`.
+
+Observations:
+Contains only a placeholder test without meaningful coverage.
 
 ---
 
-## 2. Widget & Integration Tests
+## 2. Widget and Integration Tests
 
-### Authentication & Login Flows
+### Authentication and Login Flows
 
 #### `test/ui/login_test.dart`
-*   **Purpose**: Tests the generic Login screen logic, validation, and Admin login flow.
-*   **Components Tested**: `LoginView` (implied), `AuthController` (Mocked).
-*   **Scenarios Covered**:
-    *   **Success Flow (Admin)**: Simulates entering valid Admin credentials, selecting the 'Admin' role, and verifying navigation to the Admin Dashboard.
-    *   **Validation Errors**:
-        *   Empty fields submission -> Expects "Please fill in all fields" error.
-        *   Invalid email format -> Expects "Please enter a valid email" error.
-    *   **Authentication Failure**: Simulates wrong credentials -> Expects "Invalid credentials" error.
-*   **Status**: ✅ Functional.
+
+Purpose:
+Tests the login screen logic, validation, and the Admin login workflow.
+
+Components Tested:
+LoginView, AuthController (mocked).
+
+Scenarios Covered:
+
+1. Successful Admin login and navigation to the Admin Dashboard.
+2. Validation for empty fields and invalid email formats.
+3. Handling of incorrect credentials and displaying the appropriate error messages.
 
 #### `test/ui/professor_login_test.dart`
-*   **Purpose**: Specifically tests the login flow for a Professor.
-*   **Components Tested**: Login Screen, `AuthController` (Mocked), `ProfessorController` (Mocked).
-*   **Scenarios Covered**:
-    *   **Success Flow**: Simulates entering Professor credentials, selecting 'Professor' role, and verifying navigation to the Professor Dashboard ("Welcome back," text).
-*   **Status**: ✅ Functional.
+
+Purpose:
+Tests the login flow for professors.
+
+Components Tested:
+Login screen, AuthController (mocked), ProfessorController (mocked).
+
+Scenarios Covered:
+
+1. Successful Professor login and navigation to the Professor Dashboard.
 
 #### `test/ui/student_login_test.dart`
-*   **Purpose**: **MISNAMED**. The filename suggests a student login test, but the content actually tests the **Professor Dashboard**.
-*   **Observations**:
-    *   ⚠️ **Duplicate/Misnamed**: The code inside is almost identical to `test/ui/professor_dashboard_test.dart`. It sets up `MockProfessorController` and tests the Professor Dashboard interaction.
-*   **Status**: ❓ Needs Review (Renaming or Deletion).
+
+Purpose:
+The file name suggests student login testing, but the content actually tests the Professor Dashboard.
+
+Observations:
+The test content closely matches that of `professor_dashboard_test.dart`.
+The file is misnamed and may be redundant.
+
+---
 
 ### Dashboards
 
 #### `test/ui/professor_dashboard_test.dart`
-*   **Purpose**: Comprehensive interaction test for the Professor Dashboard.
-*   **Components Tested**: `ProfessorMainLayout`, Navigation (Bottom/Rail).
-*   **Scenarios Covered**:
-    *   **Profile Rendering**: Verifies the professor's name is displayed.
-    *   **Action Buttons**: Checks for "Start Lecture" button and its navigation (mocked to "No lectures today").
-    *   **Navigation**:
-        *   Detects whether `BottomNavigationBar` or `NavigationBar` is used.
-        *   Tests navigation to "Courses" tab -> Verifies "My Courses" view.
-        *   Tests navigation to "Attendance" tab -> Verifies "Attendance" view.
-*   **Status**: ✅ Functional.
+
+Purpose:
+Tests the Professor Dashboard interface and navigation flow.
+
+Components Tested:
+ProfessorMainLayout and related navigation components.
+
+Scenarios Covered:
+
+1. Rendering of the professor’s name and profile information.
+2. Display of actions such as the Start Lecture button.
+3. Navigation using bottom navigation or navigation rail.
+4. Switching between Home, Courses, and Attendance sections.
 
 #### `test/ui/student_dashboard_test.dart`
-*   **Purpose**: Interaction test for the Student Dashboard.
-*   **Components Tested**: `StudentMainLayout`, `StudentController` (Mocked).
-*   **Scenarios Covered**:
-    *   **Rendering**: Verifies student name and main menu options ("Scan QR", "View Passcode").
-    *   **Scan QR**: Tests navigation to the QR scanning view.
-    *   **View Passcode**: Tests opening the passcode dialog and selecting a course.
-    *   **Attendance Tab**: Tests navigation to the "Attendance" tab via the bottom bar.
-*   **Status**: ✅ Functional.
 
-### Dialogs & Components
+Purpose:
+Tests the Student Dashboard interface, interactions, and navigation.
 
-#### `test/views/change_password_dialog_test.dart`
-*   **Purpose**: Tests the `ChangePasswordDialog` widget in isolation.
-*   **Components Tested**: `ChangePasswordDialog`.
-*   **Scenarios Covered**:
-    *   **UI Layout**: Verifies existence of 3 text fields (Current, New, Confirm) and buttons.
-    *   **Form Validation**: Ensures "This field is required" appears if fields are empty.
-    *   **Callback Execution**: Verifies that valid input triggers the `onChangePassword` callback with the correct data.
-*   **Status**: ✅ Functional.
+Components Tested:
+StudentMainLayout, StudentController (mocked).
 
-#### `test/widget_test.dart`
-*   **Purpose**: Default Flutter smoke test.
-*   **Scenarios Covered**:
-    *   **App Launch**: Verifies that `MyApp` builds and contains a `MaterialApp`.
-*   **Status**: ✅ Functional.
+Scenarios Covered:
+
+1. Rendering of the student name and key actions such as Scan QR and View Passcode.
+2. Navigation to the QR scanning page.
+3. Opening the passcode dialog and selecting a course.
+4. Switching to the Attendance section from the bottom navigation bar.
 
 ---
 
-## 3. Findings & Recommendations
+### Dialogs and Widgets
 
-1.  **Misnamed File**: `test/ui/student_login_test.dart` contains tests for the Professor Dashboard, not Student Login. It should be renamed to `professor_dashboard_test_2.dart` or merged/deleted if it's a duplicate.
-2.  **Missing Coverage**:
-    *   **`CourseImportService`**: Critical logic for importing timetables is currently untested.
-    *   **`AuthController`**: Unit tests are missing; logic is only tested implicitly via UI tests with mocks.
-3.  **Mocking Strategy**: The project uses a manual mocking strategy (creating `Mock...` classes extending the real ones) rather than using a mocking library like `mockito` for controllers in some places, though `mockito` is imported in some files. This is a valid approach for GetX controllers.
+#### `test/views/change_password_dialog_test.dart`
+
+Purpose:
+Tests the `ChangePasswordDialog` widget.
+
+Components Tested:
+ChangePasswordDialog.
+
+Scenarios Covered:
+
+1. Verification of UI elements and input fields.
+2. Validation of empty fields.
+3. Execution of the callback with the correct input values.
+
+#### `test/widget_test.dart`
+
+Purpose:
+Basic Flutter smoke test to verify that the main application launches correctly.
+
+Scenarios Covered:
+
+1. Ensures `MyApp` builds and contains a `MaterialApp`.
+
+---
